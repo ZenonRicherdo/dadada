@@ -1,0 +1,13 @@
+getgenv().t = true -- you can turn it off by typing *false*
+while getgenv().t == true do
+local args = {
+    [1] = {
+        [1] = "HERE", -- type the name of egg here
+        [2] = false,     -- triple Hatch type *true* if you have it
+        [3] = false     -- 8x hatching eggs type *true* if you have it
+    }
+}
+
+workspace.__THINGS.__REMOTES["buy egg"]:InvokeServer(unpack(args))
+wait()
+end
