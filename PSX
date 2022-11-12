@@ -1,13 +1,11 @@
 getgenv().t = true -- you can turn it off by typing *false*
 while getgenv().t == true do
 local args = {
-    [1] = {
-        [1] = "HERE", -- type the name of egg here
-        [2] = false,     -- triple Hatch type *true* if you have it
-        [3] = false     -- 8x hatching eggs type *true* if you have it
-    }
+    [1] = "HERE",    --CHANGE EGG HERE TO SAME NAME (WITH CAPTIALS TOO)
+    [2] = false, -- IF YOU HAVE TRIPLE HATCH THEN TURN THIS TO true IF YOU DONT THEN TYPE false
+    [3] = false -- IIF YOU HAVE 8X HATCH THEN TURN THIS true IF YOU DONT THEN TYPE false
 }
 
-workspace.__THINGS.__REMOTES["buy egg"]:InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage")["#!Fbf47ff8fc2504e26a2bc6a018ce51884"]:InvokeServer(unpack(args))
 wait()
 end
